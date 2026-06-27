@@ -47,7 +47,7 @@ spec:
   packages:
     disable: true
   workerNodeGroupConfigurations:
-  - count: 1
+  - count: 2
     machineGroupRef:
       kind: VSphereMachineConfig
       name: release-i-03782-12b5075
@@ -101,9 +101,9 @@ metadata:
 spec:
   cloneMode: fullClone
   datastore: /SDDC-Datacenter/datastore/WorkloadDatastore
-  diskGiB: 25
+  diskGiB: 35
   folder: /SDDC-Datacenter/vm
-  memoryMiB: 8192
+  memoryMiB: 10196
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
